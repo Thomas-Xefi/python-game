@@ -1,4 +1,9 @@
-from models.character.character import Character
+from models.categories.category import Category
+from models.entities.entity import Entity
 
-perso = Character(0, 0, 0, 1, pos=[0, 0])
-print(perso.features)
+category = Category()
+entity = Entity()
+monsters = category.getMonsters()
+heroes = category.getHeroes()
+
+test = entity.loadEntity(1)
